@@ -15,35 +15,38 @@
             justify-content: center;
             height: 30vh;
             margin: 0;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            background-color: #28a745; 
+            font-family: 'Courier New', Courier, monospace;
+            background-color: blue; 
             color: whitesmoke;
         }
+ 
 
         #saludo {
             margin-bottom: 20px;
         }
 
         .btn-primary {
-            background-color: #ffc107; /* Amarillo */
-            color: #212529; /* Texto oscuro para mejor visibilidad */
-            border-color: #ffc107; /* Borde amarillo */
+            background-color: #010f68; /* Amarillo */
+            color: #fbfcfd; /* Texto oscuro para mejor visibilidad */
+            border-color: #0b73eb; /* Borde amarillo */
         }
 
         .btn-primary:hover {
-            background-color: #e0a800; /* Amarillo más oscuro al pasar el ratón sobre el botón */
-            border-color: #e0a800;
+            background-color: #4300e0; /* Amarillo más oscuro al pasar el ratón sobre el botón */
+            border-color: #1100ff;
         }
     </style>
-    <script>
-        function cambiarNombre() {
-            var nuevoNombre = prompt("¿Cuál es tu nombre?");
-            if (nuevoNombre !== null && nuevoNombre.trim() !== "") {
-                var mensaje = "¡Hola " + nuevoNombre + "!";
-                document.getElementById("saludo").innerText = mensaje;
-            }
+<script>
+    function cambiarNombre() {
+        var nuevoNombre = prompt("¿Cuál es tu nombre?");
+        if (nuevoNombre !== null && nuevoNombre.trim() !== "") {
+            var mensajeSaludo = "¡Hola ahora tienes un virus " + nuevoNombre + "! Virus, virus, virus, virus, virus, virus, virus, virus, virus.";
+            document.getElementById("saludo").innerText = mensajeSaludo;
+
         }
-    </script>
+    }
+</script>
+
 </head>
 <body>
     <div class="container text-center">
